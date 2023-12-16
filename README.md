@@ -7,11 +7,14 @@ Publicar uma imagem docker hub atendendo os seguintes requisitos:
 
 
 ### Comandos básicos
+Gerar a imagem
 ```bash
-#Gerar a imagem
 docker build -t edgarslima/golang-desafio-docker:latest .
+```
 
-#Rodar e testar a imagem
+Rodar e testar a imagem
+
+```bash
 docker run --rm --name go edgarslima/golang-desafio-docker
 ````
 
@@ -32,11 +35,15 @@ docker push edgarslima/golang-desafio-docker
 ```
 
 Testar imagem criada no Docker Hub
-```bash
-#Apaga imagem local
-docker rmi -f $(docker images edgarslima/golang-desafio-docker -aq)
 
-#Baixando e rodando imagem do Docker Hub
+Apaga imagem local
+```bash
+
+docker rmi -f $(docker images edgarslima/golang-desafio-docker -aq)
+```
+
+Baixando e rodando imagem do Docker Hub
+```bash
 docker run --rm --name go edgarslima/golang-desafio-docker
 ```
 
