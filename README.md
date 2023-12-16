@@ -21,11 +21,12 @@ docker run --rm --name go edgarslima/golang-desafio-docker
 Verificando tamanho da imagem
 ```bash
 docker images
+```
 
 REPOSITORY                         TAG       IMAGE ID       CREATED        SIZE
 edgarslima/golang-desafio-docker   latest    1e3c9439cb86   17 hours ago   1.8MB
 
-```
+
 
 Subindo imagem docker para Docker Hub
 
